@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Guitar Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id="title"> Guitar Survey </h1>
+            <p id="description">This form is made to know your guitar types and preferences</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" class="form-control" type="text"
+                    placeholder="Enter your name..." required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" class="form-control" type="email" name="email"
+                    placeholder="Enter your email..."
+                    required />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age(optional)</label>
+                <input id="number" class="form-control" type="number" name="age" min="10" max="99"
+                    placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>Choose the type of guitar you prefer</p>
+                <select id="dropdown" class="form-control" name="guitar-types"
+                    required>
+                    <option disabled selected value>Chose an option</option>
+                    <option value="classical">Classical</option>
+                    <option value="acoustic">Acoustic</option>
+                    <option value="electric">Electric</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Which type of amp you use? </p>
+                <label>
+                <input class="input-radio" name="amp" value="real-amp"
+                    type="radio" checked />
+                    Real Amp
+                </label>
+                <input class="input-radio" name="amp" value="simulated-amp"
+                    type="radio" />
+                    Amp Simulator (VST3, AU, AAX)
+                </label>
+            </div>
+            <div>
+                <p>Which brands are your favorites?
+                    <span class="clue">(Select your favorites)</span>
+                </p>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="dean" type="checkbox" />
+                    Dean</label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="ibanez" type="checkbox" />
+                    Ibanez</label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="fender" type="checkbox" />
+                    Fender</label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="charvel" type="checkbox" />
+                    Charvel</label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="shecter" type="checkbox" />
+                    Shecter</label>
+            </div>
+            <div class="form-group">
+                <p>Any additional comments?</p>
+                <textarea class="input-texarea" id="comments" name="comment" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" class="submit-button" type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>

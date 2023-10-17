@@ -1,0 +1,117 @@
+
+#survey-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-group {
+    margin: 10px 0;
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+
+.input-text,
+.input-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+
+.input-radio,
+.input-checkbox {
+    margin-right: 5px;
+}
+
+
+.submit-button {
+    display: block;
+    margin: 0 auto;
+    width: 60%; 
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+
+
+.input-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+header {
+    color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    color: aliceblue;
+    font-size: 36px;
+    margin: 0;
+}
+
+#description {
+    color: #f7f7f7;
+    font-size: 16px;
+}
+
+
+.form-group label {
+    display: flex;
+    align-items: center;
+}
+
+.clue {
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 780px) {
+    #survey-form {
+        padding: 5px;
+    }
+}
+
+body {
+    background-image: url('../img/guitars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
